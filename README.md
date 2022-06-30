@@ -67,10 +67,10 @@
 
 Here are a few of the disks and their content and notes. Again no clue if I'm doing this right or why I can't get to the stuff I want
 
-| Name                                    | Photo            | Content                        |
-|-----------------------------------------|------------------|--------------------------------|
-| EasyWrite 1.3                           | [png](clickhere) | scp<br>visual<br>img<br>       |
-| WhiteCreek Cemetery Backup (1984)       | [png](clickhere) | scp<br>visual<br>img<br>       |
+| Name                               | Photo            | Content                        |
+|------------------------------------|------------------|--------------------------------|
+| EasyWriter 1.3                     | [png](clickhere) | scp<br>visual<br>img<br>       |
+| WhiteCreek Cemetery Backup (1984)  | [png](clickhere) | scp<br>visual<br>img<br>       |
 
 ## Building something
 - this all started because had a hunch the printed binders were too well organized to not have some kind of electronic data structure
