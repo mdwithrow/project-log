@@ -1,2 +1,71 @@
-# project-log
-Writeups of various endeavors
+**Overview:** Move old geneaology data to something modern for backup, review and usage. 
+
+# Phases
+- Getting the data - how to get from 5.25 to modern/backedup location
+- Exploring the content - how to see what data and what formats we have
+- Building something - how to do something interesting with the family tree data (model, visualization, etc.)
+
+## Getting the data 
+- Will use the [greaseweazle](https://github.com/keirf/Greaseweazle) project hardware and software notes in the project wiki
+### Hardware
+   - [x] working 5.25 drive (Thank, Ralph!)
+   - [x] test disks - figure out the commands and steps on a program disk or something replaceable before running the actual valuable disks through the process
+   - [x] USB cable
+   - [x] Power supply with molex - jump start the powersupply w/ a bit of wire or paper clip ([more details on that here](https://www.overclockersclub.com/guides/atx_psu_startup/))
+   - [x] greaseweazle controller
+   - [x] twisted ribbon cable
+   
+### Hook it up
+```
+[powersupply / molex lead] --> [5.25 drive] <-- ribbon cable --> [greaseweazle controller] <-- usb cable --> [laptop]
+```    
+- I had some trouble with basic stuff like what is up, what is down, which way does disk go in, etc....
+   - the ribbon cable has a strip that is colored to help with orientation, line this polarity line up with the triangle on the greaseweazle connector. (The greaseweazle female 34 pin isn't keyed, so pay attention to this)
+  - On the connection to the actual drive, it is keyed so there is only one way to attach it. Connect the last position on the cable to the drive (the 'A:' position in a lot of pictures)
+  - I left my drive jumper settings to D1
+  - Keep the drive flat, for the me, the jumpers and spinning drum would be down against the table
+  - Disks go in with the 'window' first, typically this means the label will be closest to you and facing up
+  - I didn't do the 'terminator resistor' part mentined in the wiki... i don't quite understand where/how/what is being connected.... maybe this is why i'm getting hit and miss results?
+
+### Software
+-  will start with these pieces of software: 
+   - [greaseweazle](https://github.com/keirf/greaseweazle) - for taking the initial flux capture
+   - [fluxvis](https://github.com/adafruit/fluxvis) - just for fun to 'visualize' the flux capture
+   - [HxC Floppy Emulator](https://hxc2001.com/download/floppy_drive_emulator/)
+- other things I stumbled across but didn't get figured out
+   - [disk-utilities](https://github.com/keirf/disk-utilities)
+   - [fluxEngine](http://cowlark.com/fluxengine/index.html)
+
+1) With everything hooked up, do a read with greaseweasle to an .scp file 
+
+        gw read filename.scp
+
+> I had a lot of trouble even reaching the greaseweasle device consisently. use the command `gw info` to see your device. Also `ls /dev/tty*` (look for AM0) and `lsusb` to confirm it was there. Even after I initially got it responding, sometimes I would have to run the commands twice (fatal error fist time, then just works second time). Not sure what was up with that. Maybe kernel bug based on some issues I saw, but who knows. Also tried the udev rules mentioned in the wiki and adding myself to uucp and tty groups (manjaro/arch)... not sure what actually made it happy. Once a read did get started, it always went through all 81 tracks. Also may just be my laptop.
+
+2) After you have this .scp file, you can load it in HxC emulator. This I had to run with Wine but it worked fine. 
+3) Once loaded (takes a few seconds) you can do a few interesting things
+   - Export to an .img
+   - Analyze the tracks
+   - Browse the contents
+
+![img](https://raw.githubusercontent.com/mdwithrow/project-log/main/track-analyzer.gif)
+
+> So looking through the track analyzer I can see the content I want somewhere in there (from that hex preview pane). However more often then not, if I tried to browse the contents it would be a no go. If it let me browse and see files in HxC, I would export to an .img and then mount it locally to review. BUT even then, the files are all garbled up, even just things like txt files. 
+
+![img](https://raw.githubusercontent.com/mdwithrow/project-log/main/null-sized-dos-image-invalid-disk.png)
+
+4) Just to see the flux in a cool way, I used fluxvis. Give it the flux file and the filename to save the image to
+
+        fluxvis write filename.scp fileout.png
+
+![img](https://raw.githubusercontent.com/mdwithrow/project-log/main/fluxvis.png)
+
+## Exploring the content
+- recieved much larger collection than initially expected; 50+ misc 5.25 disks
+- all seem dos focused (DOS apps or misc data disks- assuming formated/used for DOS)
+
+
+## Building something
+- this all started because had a hunch the printed binders were too well organized to not have some kind of electronic data structure
+- there was a lot of key value stype things, but no over all family tree visual
+- I wanted to make a tree you can navigate through, click on to pop out details, stuff like that.
