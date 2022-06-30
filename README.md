@@ -71,6 +71,11 @@ Here are a few of the disks and their content and notes. Again no clue if I'm do
 |------------------------------------|------------------|--------------------------------|
 | EasyWriter 1.3                     | [png](clickhere) | scp<br>visual<br>img<br>       |
 | WhiteCreek Cemetery Backup (1984)  | [png](clickhere) | scp<br>visual<br>img<br>       |
+| Untitled 001                       | [png](clickhere) | scp<br>visual<br>img<br>       |
+| Untitled 002                       | [png](clickhere) | scp<br>visual<br>img<br>       |
+| Untitled 003                       | [png](clickhere) | scp<br>visual<br>img<br>       |
+| Untitled 004                       | [png](clickhere) | scp<br>visual<br>img<br>       |
+| Untitled 005                       | [png](clickhere) | scp<br>visual<br>img<br>       |
 
 ## Building something
 - this all started because had a hunch the printed binders were too well organized to not have some kind of electronic data structure
