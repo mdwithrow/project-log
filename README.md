@@ -20,12 +20,12 @@
 [powersupply / molex lead] --> [5.25 drive] <-- ribbon cable --> [greaseweazle controller] <-- usb cable --> [laptop]
 ```    
 - I had some trouble with basic stuff like what is up, what is down, which way does disk go in, etc....
-   - the ribbon cable has a strip that is colored to help with orientation, line this polarity line up with the triangle on the greaseweazle connector. (The greaseweazle female 34 pin isn't keyed, so pay attention to this)
+   - the ribbon cable has a colored strip that is colored to help with orientation, line this polarity stripe up with the triangle on the greaseweazle connector. (The greaseweazle female 34 pin is keyed, but the cable I got is not; so pay attention to this)
   - On the connection to the actual drive, it is keyed so there is only one way to attach it. Connect the last position on the cable to the drive (the 'A:' position in a lot of pictures)
   - I left my drive jumper settings to D1
-  - Keep the drive flat, for the me, the jumpers and spinning drum would be down against the table
-  - Disks go in with the 'window' first, typically this means the label will be closest to you and facing up
-  - I didn't do the 'terminator resistor' part mentined in the wiki... i don't quite understand where/how/what is being connected.... maybe this is why i'm getting hit and miss results?
+  - Keep the drive flat. For me, the jumpers and spinning drum would be down against the table
+  - Disks go in with the 'window' first. Typically this means the label will be closest to you and facing up
+  - I didn't do the 'terminator resistor' part mentined in the wiki. I don't understand where/how/what is being connected.... maybe this is why I'm getting hit and miss results?
 
 ### Software
 -  will start with these pieces of software: 
@@ -42,15 +42,15 @@
 
 > I had a lot of trouble even reaching the greaseweasle device consisently. use the command `gw info` to see your device. Also `ls /dev/tty*` (look for AM0) and `lsusb` to confirm it was there. Even after I initially got it responding, sometimes I would have to run the commands twice (fatal error fist time, then just works second time). Not sure what was up with that. Maybe kernel bug based on some issues I saw, but who knows. Also tried the udev rules mentioned in the wiki and adding myself to uucp and tty groups (manjaro/arch)... not sure what actually made it happy. Once a read did get started, it always went through all 81 tracks. Also may just be my laptop.
 
-2) After you have this .scp file, you can load it in HxC emulator. This I had to run with Wine but it worked fine. 
+2) After you have this .scp file, you can load it in HxC emulator. I ran HxC with Wine and it worked fine. 
 3) Once loaded (takes a few seconds) you can do a few interesting things
-   - Export to an .img
+   - Export to an .img and other formats
    - Analyze the tracks
    - Browse the contents
 
 ![img](https://raw.githubusercontent.com/mdwithrow/project-log/main/track-analyzer.gif)
 
-> So looking through the track analyzer I can see the content I want somewhere in there (from that hex preview pane). However more often then not, if I tried to browse the contents it would be a no go. If it let me browse and see files in HxC, I would export to an .img and then mount it locally to review. BUT even then, the files are all garbled up, even just things like txt files. 
+> So looking through the track analyzer I can see the content I want somewhere in there (from that hex preview pane - names, details, etc.). However more often then not, if I tried to browse the contents it would be a no go. If it let me browse and see files in HxC, I would export to an .img and then mount it locally to review. BUT even then, the files are all garbled up, even just things like txt seemed very odd when opening. I tried mounting from the file explorer as well as mounting inside dosbox. I am starting to wonder if I have a mix of DOS and non-DOS formated disks. I don't know how to tell that part. 
 
 ![img](https://raw.githubusercontent.com/mdwithrow/project-log/main/null-sized-dos-image-invalid-disk.png)
 
@@ -61,9 +61,16 @@
 ![img](https://raw.githubusercontent.com/mdwithrow/project-log/main/fluxvis.png)
 
 ## Exploring the content
-- recieved much larger collection than initially expected; 50+ misc 5.25 disks
-- all seem dos focused (DOS apps or misc data disks- assuming formated/used for DOS)
+- I recieved a much larger collection than initially expected; 50+ misc 5.25 disks
+- No clue on the system grampa ran or if these are DOS, Apple, etc. I also don't know enough about the disks themselves to gleen anything just visually.
+- Some seem to be 'dd' and have the 'material' around the disk hole. But I don't exactly understand the signifigance of that or if it changes the archiving and file review process. 
 
+Here are a few of the disks and their content and notes. Again no clue if I'm doing this right or why I can't get to the stuff I want
+
+| Name                                    | Photo            | Content                        |
+|-----------------------------------------|------------------|--------------------------------|
+| EasyWrite 1.3                           | [png](clickhere) | scp<br>visual<br>img<br>       |
+| WhiteCreek Cemetery Backup (1984)       | [png](clickhere) | scp<br>visual<br>img<br>       |
 
 ## Building something
 - this all started because had a hunch the printed binders were too well organized to not have some kind of electronic data structure
