@@ -6,7 +6,8 @@
 - Building something - how to do something interesting with the family tree data (model, visualization, etc.)
 
 ## Getting the data 
-- Will use the [greaseweazle](https://github.com/keirf/Greaseweazle) project hardware and software notes in the project wiki
+- Will use the [greaseweazle](https://github.com/keirf/Greaseweazle) project hardware and software notes in the [project wiki](https://github.com/keirf/greaseweazle/wiki)
+
 ### Hardware
    - [x] working 5.25 drive (Thank, Ralph!)
    - [x] test disks - figure out the commands and steps on a program disk or something replaceable before running the actual valuable disks through the process
