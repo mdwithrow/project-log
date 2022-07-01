@@ -2,7 +2,6 @@
 
 **Shoutouts:** These were great sources to try and piece this puzzle together from the learning and research aspect
 - https://winworldpc.com/home
-- 
 
 # Phases
 - Getting the data - how to get from 5.25 to modern/backedup location
