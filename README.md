@@ -1,7 +1,10 @@
 **Overview:** Move old geneaology data to something modern for backup, review and usage. 
 
-**Shoutouts:** These were great sources to try and piece this puzzle together from the learning and research aspect
+**Shoutouts:** These were great sources of info while trying to piece this puzzle together.
 - https://winworldpc.com/home
+- https://github.com/archivistsguidetokryoflux/archivists-guide-to-kryoflux
+- https://www.dpconline.org/blog/wdpd/extracting-info-from-floppy-disks
+- https://www.nostalgianerd.com/why-are-floppy-cables-twisted
 
 # Phases
 - Getting the data - how to get from 5.25 to modern/backedup location
