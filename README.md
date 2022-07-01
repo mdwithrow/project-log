@@ -1,5 +1,9 @@
 **Overview:** Move old geneaology data to something modern for backup, review and usage. 
 
+**Shoutouts:** These were great sources to try and piece this puzzle together from the learning and research aspect
+- https://winworldpc.com/home
+- 
+
 # Phases
 - Getting the data - how to get from 5.25 to modern/backedup location
 - Exploring the content - how to see what data and what formats we have
@@ -63,8 +67,11 @@
 
 ## Exploring the content
 - I recieved a much larger collection than initially expected; 50+ misc 5.25 disks
-- No clue on the system grampa ran or if these are DOS, Apple, etc. I also don't know enough about the disks themselves to gleen anything just visually.
-- Some seem to be 'dd' and have the 'material' around the disk hole. But I don't exactly understand the signifigance of that or if it changes the archiving and file review process. 
+- Very few clues on the systems grandpa ran or if these are DOS, Apple, etc. I also don't know enough about the disks themselves to gleen anything just visually. There are a few sleeves that indicate DOS, so I'll assume that till later.
+- Some disks seem to be 'dd' and have the 'material' around the disk hole. But I don't exactly understand the signifigance of that or if it changes the archiving and file review process. 
+- To get started, I've labeled the different groupings with a chalk pen incase the groups are signifigant. I'm going to catalog the labels and try too prioiritize an approach 
+   - I'm thinking maybe I can find good flux and img files on line for some of the abandonware and compare my work to theirs
+   - Also if there is some kind of menainful organization going on, I want to be able to get somewhat back to original creator's thought process (data disks, applications, etc.)
 
 Here are a few of the disks and their content and notes. Again no clue if I'm doing this right or why I can't get to the stuff I want
 
