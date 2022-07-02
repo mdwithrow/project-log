@@ -1,6 +1,7 @@
 **Overview:** Move old geneaology data to something modern for backup, review and usage. 
 
 **Shoutouts:** These were great sources of info while trying to piece this puzzle together.
+- http://www.nj7p.org/Computers/Disk%20Subsystems/floppies.html
 - https://winworldpc.com/home
 - https://github.com/archivistsguidetokryoflux/archivists-guide-to-kryoflux
 - https://www.dpconline.org/blog/wdpd/extracting-info-from-floppy-disks
