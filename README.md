@@ -6,6 +6,9 @@
 - https://github.com/archivistsguidetokryoflux/archivists-guide-to-kryoflux
 - https://www.dpconline.org/blog/wdpd/extracting-info-from-floppy-disks
 - https://www.nostalgianerd.com/why-are-floppy-cables-twisted
+- https://nerdlypleasures.blogspot.com/2011/05/scourge-of-preservation-disk-based-copy.html
+- https://diskpreservation.com/dp.php?pg=protection
+- http://sidpreservation.6581.org/floppy-loaders/
 
 # Phases
 - Getting the data - how to get from 5.25 to modern/backedup location
