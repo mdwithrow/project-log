@@ -1,4 +1,12 @@
-**Overview:** Move old geneaology data to something modern for backup, review and usage. 
+:loudspeaker: **My desktop broke and then our family grew +1 :D This project is on hold for a bit. I may pick it up 2023 if I get a new PC built.**
+
+# Overview
+Move old geneaology data to something modern for backup, review and usage. 
+
+## Phases
+- Getting the data - how to get from 5.25 to modern/backedup location
+- Exploring the content - how to see what data and what formats we have
+- Building something - how to do something interesting with the family tree data (model, visualization, etc.)
 
 **Shoutouts:** These were great sources of info while trying to piece this puzzle together.
 - http://www.nj7p.org/Computers/Disk%20Subsystems/floppies.html
@@ -10,15 +18,11 @@
 - https://diskpreservation.com/dp.php?pg=protection
 - http://sidpreservation.6581.org/floppy-loaders/
 
-# Phases
-- Getting the data - how to get from 5.25 to modern/backedup location
-- Exploring the content - how to see what data and what formats we have
-- Building something - how to do something interesting with the family tree data (model, visualization, etc.)
 
-## Getting the data 
+# Getting the data 
 - Will use the [greaseweazle](https://github.com/keirf/Greaseweazle) project hardware and software notes in the [project wiki](https://github.com/keirf/greaseweazle/wiki)
 
-### Hardware
+## Hardware
    - [x] working 5.25 drive (Thank, Ralph!)
    - [x] test disks - figure out the commands and steps on a program disk or something replaceable before running the actual valuable disks through the process
    - [x] USB cable
@@ -26,7 +30,7 @@
    - [x] greaseweazle controller
    - [x] twisted ribbon cable
    
-### Hook it up
+## Hook it up
 ```
 [powersupply / molex lead] --> [5.25 drive] <-- ribbon cable --> [greaseweazle controller] <-- usb cable --> [laptop]
 ```    
@@ -38,7 +42,7 @@
   - Disks go in with the 'window' first. Typically this means the label will be closest to you and facing up
   - I didn't do the 'terminator resistor' part mentined in the wiki. I don't understand where/how/what is being connected.... maybe this is why I'm getting hit and miss results?
 
-### Software
+## Software
 -  will start with these pieces of software: 
    - [greaseweazle](https://github.com/keirf/greaseweazle) - for taking the initial flux capture
    - [fluxvis](https://github.com/adafruit/fluxvis) - just for fun to 'visualize' the flux capture
@@ -71,7 +75,7 @@
 
 ![img](https://raw.githubusercontent.com/mdwithrow/project-log/main/fluxvis.png)
 
-## Exploring the content
+# Exploring the content
 - I recieved a much larger collection than initially expected; 50+ misc 5.25 disks
 - Very few clues on the systems grandpa ran or if these are DOS, Apple, etc. I also don't know enough about the disks themselves to gleen anything just visually. There are a few sleeves that indicate DOS, so I'll assume that till later.
 - Some disks seem to be 'dd' and have the 'material' around the disk hole. But I don't exactly understand the signifigance of that or if it changes the archiving and file review process. 
@@ -91,7 +95,7 @@ Here are a few of the disks and their content and notes. Again no clue if I'm do
 | 1               | Untitled 004                       | [png](clickhere) | scp<br>visual<br>img<br>       |
 | 1               | Untitled 005                       | [png](clickhere) | scp<br>visual<br>img<br>       |
 
-## Building something
+# Building something
 - this all started because had a hunch the printed binders were too well organized to not have some kind of electronic data structure
 - there was a lot of key value stype things, but no over all family tree visual
 - I wanted to make a tree you can navigate through, click on to pop out details, stuff like that.
