@@ -17,6 +17,8 @@ Move old geneaology data to something modern for backup, review and usage.
 - https://nerdlypleasures.blogspot.com/2011/05/scourge-of-preservation-disk-based-copy.html
 - https://diskpreservation.com/dp.php?pg=protection
 - http://sidpreservation.6581.org/floppy-loaders/
+- https://www.eriscreations.com/sanyo/
+- https://eriscreations.com/sanyo-mbc-550-555/
 
 
 # Getting the data 
