@@ -33,6 +33,7 @@ Move old geneaology data to something modern for backup, review and usage.
 - https://www.osforensics.com/tools/mount-disk-images.html
 - https://www.osforensics.com/tools/mount-disk-images.html
 - https://winworldpc.com/product/easy-writer/10
+- https://www.atarimagazines.com/creative/v10n9/12_Sanyo_555_small_business.php
 
 
 # Getting the data 
