@@ -2,7 +2,7 @@
 
 ## 2/28/2024 restart notes
 OK, so a lot has happend in the last week or so. 
-1) reached out to a sanyo expert
+1) started reaching out to other internet experts
 2) talked with some colleauges to solicit ideas
 3) reached out to a genealogy library that hopefully (going on a lot of assumptions) may be the source of this data   
 
