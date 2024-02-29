@@ -1,4 +1,11 @@
-:loudspeaker: **My desktop broke and then our family grew +1 :D This project is on hold for a bit. I may pick it up 2023 if I get a new PC built.**
+:loudspeaker: **Going to try rebooting this project!!**
+
+## 2/28/2024 restart notes
+OK, so a lot has happend in the last week or so. 
+1) reached out to a sanyo expert
+2) talked with some colleauges to solicit ideas
+3) reached out to a genealogy library that hopefully (going on a lot of assumptions) may be the source of this data
+I ended up getting another device and while I was trying it out, i found a very interesting set of instructions around jumpers for my drive (TEAC FD-55GFR 149-US). Lo and behold, setting these jumpers and I get clean reads! I need to get organized now and try and split what I have into app and data images. Right now the process is check if I can browse to the disk, make an image in 'Disk Image and Browse' which came with the FC5025, then explore the image with OSFMount. I did run a few in dosbox Also so I don't forget, I think some of the 'weirdness' maybe coming from EasyWriter? Like the Don Draper, Capn'Crunch? I need to look a little closer. Maybe they were just named the same. There is also a WordStar and a 'Family History' software bundle I think I'll need to look at a bit closer. All the data disks I pull have .TXT files but they are either extreemly trashed or not text files at all. More to come. I'll work out a recording process and upload images, pictures and other content as I go. 
 
 # Overview
 Move old geneaology data to something modern for backup, review and usage. 
@@ -19,6 +26,12 @@ Move old geneaology data to something modern for backup, review and usage.
 - http://sidpreservation.6581.org/floppy-loaders/
 - https://www.eriscreations.com/sanyo/
 - https://eriscreations.com/sanyo-mbc-550-555/
+- https://uisapp2.iu.edu/confluence-prd/display/DIGIPRES/8.+Troubleshooting
+- https://www.manualslib.com/manual/2929133/Teac-Fc5025.html?page=3#manual
+- https://github.com/mesquidar/ForensicsTools?tab=readme-ov-file#disk-image-handling
+- https://www.osforensics.com/tools/mount-disk-images.html
+- https://www.osforensics.com/tools/mount-disk-images.html
+- https://winworldpc.com/product/easy-writer/10
 
 
 # Getting the data 
@@ -31,6 +44,7 @@ Move old geneaology data to something modern for backup, review and usage.
    - [x] Power supply with molex - jump start the powersupply w/ a bit of wire or paper clip ([more details on that here](https://www.overclockersclub.com/guides/atx_psu_startup/))
    - [x] greaseweazle controller
    - [x] twisted ribbon cable
+   - [x] DeviceSide FC5025 (Thanks for the link, MGE!)
    
 ## Hook it up
 ```
